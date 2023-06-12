@@ -10,14 +10,29 @@
 <style>
     h1{
         background-color: antiquewhite;
+        text-align: center;
+    }
+    h3{
+        color: white;
+    }
+    ul{
+        list-style: none;
+    }
+    h2{
+        border: 5px orange;
+        border-color: azure;
+        background-color: wheat;
+    }
+    body{
+        background-color: black;
     }
 </style>
 
 <body>
-    <h1>"At foo bar"</h1>
+    <h1>At foo bar</h1>
     <h2><%= drink.name %> </h2>
     <img src="<%= drink.image %>.png">
-    <h3>Price, <%= drink.price %></h3>
+    <h3><%= drink.price %></h3>
     <a href="/drinks"> Back to home Screen</a>
 </body>
 </html>
