@@ -20,11 +20,17 @@ app.get("/drinks",(req,res) => {
     res.render("index.ejs",{drinks})
 })
 
-
+// show route
+app.get("/drinks/:id",(req,res) => {
+    const id = req.params.id
+    const drink = drinks[id]
+    // help i dont know why i can't pass in the drink this way
+    // res.render("show.ejs", {drinks[id]})
+    /////////////////////////////////////
+    res.render("show.ejs",{drink})
+})
 
 app.listen(PORT, () => {
     console.log(`we are live on port ${PORT}`)
 })
-
-
 

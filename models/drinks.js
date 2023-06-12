@@ -41,5 +41,5 @@ const drinks = [
     }
   ]
 
-  module.exports = drinks
+  module.exports = (drinks)
   
