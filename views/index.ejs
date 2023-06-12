@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.ejs</title>
+
+</head>
+<style>
+    h1{
+        background-color: antiquewhite;
+    }
+</style>
+
+<body>
+    <h1>Welcome to Ronard's gitpub</h1>
+    <ul>
+        <% for (let drink of drinks) { %>
+            <% const name  = drink.name %>
+            <li><%= name.charAt(0).toUpperCase() + name.slice(1) %></li>
+        <%} %>
+    </ul>
+</body>
+</html>

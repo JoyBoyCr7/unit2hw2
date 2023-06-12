@@ -15,9 +15,9 @@ app.use(morgan("dev"))
 app.get("/",(req,res) => {
     res.send("Welcome to the Gitpub App!")
 })
-
+// index
 app.get("/drinks",(req,res) => {
-    res.send(drinks)
+    res.render("index.ejs",{drinks})
 })
 
 
